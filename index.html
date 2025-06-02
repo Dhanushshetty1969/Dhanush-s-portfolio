@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanush Developer's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Meddon&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <link rel="stylesheet" href="preloader.css">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="cursor.css">
+
+</head>
+
+<body class="no-scroll-preload">
+    <!-- loader -->
+    <div class="loader-container">
+        <div class="atom">
+            <div class="electron"></div>
+            <div class="electron-alpha"></div>
+            <div class="electron-omega"></div>
+        </div>
+    </div>
+
+    <div id="vanta-bg"></div>
+
+    <header>
+        <nav>
+            <div class="left">Dhanush's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html" id="nav-home">Home</a></li>
+                    <li><a href="about.html" id="nav-about">About</a></li>
+                    <li><a href="skills.html" id="nav-skills">Skills</a></li>
+                    <li><a href="projects.html" id="nav-projects">Projects</a></li>
+                    <li><a href="contact.html" id="nav-contact">Contact</a></li>
+                    <!-- Add this inside the <ul> of your navigation -->
+                    <li>
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purple">Dhanush</span>
+                <div>I'm a passionate</div>
+                <div><span class="purple"><span id="element"></span></span></div>
+                <div class="buttons">
+                    <a href="documents/resume.pdf" download="Dhanush_Resume.pdf">
+                        <button class="btn btn-primary">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/Dhanushshetty1969" target="_blank">
+                        <button class="btn btn-secondary">Visit GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="images/B.png" alt="Profile Image">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dhanush-shetty-b00aba231/" target="_blank">
+                <lord-icon src="https://cdn.lordicon.com/kozzgyfy.json" trigger="hover"
+                    colors="primary:#121331,secondary:#ebe6ef,tertiary:#3080e8" style="width:50px;height:50px">
+                </lord-icon>
+            </a>
+            <a href="https://github.com/Dhanushshetty1969" target="_blank">
+                <lord-icon src="https://cdn.lordicon.com/lllcnxva.json" trigger="hover" style="width:50px;height:50px">
+                </lord-icon>
+            </a>
+            <a href="https://www.instagram.com/dhxnush_shetty/" target="_blank">
+                <lord-icon src="https://cdn.lordicon.com/pwqdtrya.json" trigger="hover"
+                    colors="primary:#121331,secondary:#ebe6ef,tertiary:#e8308c,quaternary:#ffc738,quinary:#3080e8"
+                    style="width:50px;height:50px">
+                </lord-icon>
+            </a>
+        </div>
+        <p>© 2025 Dhanush. All Rights Reserved.</p>
+    </footer>
+    <div class="cursor-dot"></div>
+    <div class="cursor-dot-outline"></div>
+    <script src="cursor.js"></script>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            VANTA.NET({
+        el: "#vanta-bg",
+        color: 0xa174a,
+        backgroundColor: 0xFFFFFF,
+        points: 10.0,
+        maxDistance: 10.0,
+        spacing: 20.0
+            });
+        });
+    </script>
+
+</body>
+
+</html>

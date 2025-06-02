@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dhanush</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Meddon&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="cursor.css">
+</head>
+
+<body>
+    <div id="vanta-bg"></div> <!-- Background effect container -->
+    <header>
+        <nav>
+            <div class="left">Dhanush's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <!-- Add this inside the <ul> of your navigation -->
+                    <li>
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1 class="contact-me">Contact Me</h1>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dhanush-shetty-b00aba231/" target="_blank">
+                <lord-icon src="https://cdn.lordicon.com/kozzgyfy.json" trigger="hover"
+                    colors="primary:#121331,secondary:#ebe6ef,tertiary:#3080e8" style="width:50px;height:50px">
+                </lord-icon>
+            </a>
+            <a href="https://github.com/Dhanushshetty1969" target="_blank">
+                <lord-icon src="https://cdn.lordicon.com/lllcnxva.json" trigger="hover" style="width:50px;height:50px">
+                </lord-icon>
+            </a>
+            <a href="https://www.instagram.com/dhxnush_shetty/" target="_blank">
+                <lord-icon src="https://cdn.lordicon.com/pwqdtrya.json" trigger="hover"
+                    colors="primary:#121331,secondary:#ebe6ef,tertiary:#e8308c,quaternary:#ffc738,quinary:#3080e8"
+                    style="width:50px;height:50px">
+                </lord-icon>
+            </a>
+        </div>
+
+        <p>© 2025 Dhanush. All Rights Reserved.</p>
+    </footer>
+    <div class="cursor-dot"></div>
+    <div class="cursor-dot-outline"></div>
+    <script src="cursor.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            VANTA.RINGS({
+                el: "body", // Use "body" for full page effect, or replace with an element ID
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: window.innerHeight, // Ensures full page coverage
+                minWidth: window.innerWidth,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                backgroundColor: 0xffffff, // Corrected hex color
+                color: 0x0 // Adjust as needed
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll(".right ul li a");
+            const currentPath = window.location.pathname.split("/").pop() || "contact.html"; // Extracts the current page filename
+
+            links.forEach(link => {
+                if (link.getAttribute("href").includes(currentPath)) {
+                    link.classList.add("active"); // Adds active class to current page link
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
