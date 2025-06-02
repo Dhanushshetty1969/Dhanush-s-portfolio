@@ -1,2 +1,2 @@
-# Dhanush-s-portfolio
+# Portfolio
 Personal portfolio
